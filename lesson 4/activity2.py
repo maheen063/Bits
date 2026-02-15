@@ -1,7 +1,7 @@
 def powerOf4(number):
 
     count = 0
-    if (number and (not(number & (number - 1)))):
+    if (number and (~(number & (number - 1)))):
         while(number > 0):
             number >>= 1
             count += 1
